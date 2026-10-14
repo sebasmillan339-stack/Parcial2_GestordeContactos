@@ -19,4 +19,8 @@ public class Controlador {
         Contacto nuevoContacto = new Contacto(nombre, telefono);
         agenda.guardarContacto(nuevoContacto);
     }
+    
+    public String buscarTelefono(String nombre) {
+        return agenda.buscarTelefono(nombre);
+    }
 }
