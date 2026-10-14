@@ -1,12 +1,14 @@
-
 package modelo;
 
 import java.util.ArrayList;
 
+
 public class Agenda {
+
 
     private ArrayList<Contacto> contactos;
 
+    
     public Agenda() {
         this.contactos = new ArrayList<>();
     }
@@ -19,7 +21,18 @@ public class Agenda {
         this.contactos = contactos;
     }
 
+    
     public void guardarContacto(Contacto contacto) {
         contactos.add(contacto);
+    }
+
+    // Busca un contacto por nombre y devuelve su telefono (null si no existe)
+    public String buscarTelefono(String nombre) {
+        for (Contacto contacto : contactos) {
+            if (contacto.getNombre().equalsIgnoreCase(nombre)) {
+                return contacto.getTelefono();
+            }
+        }
+        return null;
     }
 }
