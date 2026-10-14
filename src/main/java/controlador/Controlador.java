@@ -14,4 +14,9 @@ public class Controlador {
     public Controlador() {
         this.agenda = new Agenda();
     }
+
+    public void guardarContacto(String nombre, String telefono) {
+        Contacto nuevoContacto = new Contacto(nombre, telefono);
+        agenda.guardarContacto(nuevoContacto);
+    }
 }
