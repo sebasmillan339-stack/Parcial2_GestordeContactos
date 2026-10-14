@@ -26,7 +26,7 @@ public class Agenda {
         contactos.add(contacto);
     }
 
-    // Busca un contacto por nombre y devuelve su telefono (null si no existe)
+    
     public String buscarTelefono(String nombre) {
         for (Contacto contacto : contactos) {
             if (contacto.getNombre().equalsIgnoreCase(nombre)) {
