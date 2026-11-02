@@ -1,12 +1,11 @@
 /*
  * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
  */
-
-package com.mycompany.gestorcontactos;
+package com.miempresa.gestorcontactos;
 
 import vista.VentanaGestor;
 
-public class GestorContactos {
+public class Main {
 
     public static void main(String[] args) {
         VentanaGestor ventana = new VentanaGestor();
